@@ -1,7 +1,7 @@
 algoritmo "ContagemInteligente"
 
 var
-   comeco, fim, cont: inteiro
+   comeco, fim: inteiro
 inicio
       EscrevaL("CONTAGEM INTELIGENTE")
       EscrevaL("---------------------")
@@ -16,10 +16,15 @@ inicio
       EscrevaL("C O N T A N D O")
       EscrevaL("---------------------")
 
+      se (comeco < fim) entao
       Enquanto (comeco <= fim) faca
-      Escreva(comeco,"...")
-      cont <- comeco + 1
-      se
-      FimSe
+               Escreva(comeco,"...")
+               comeco <- comeco + 1
       FimEnquanto
+      senao
+      Enquanto (comeco >= fim) faca
+               Escreva(comeco,"...")
+               comeco <- comeco - 1
+      FimEnquanto
+      FimSe
 fimalgoritmo
