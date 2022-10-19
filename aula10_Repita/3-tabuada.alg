@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "tabuada"
 
 var
    cont, n, r: inteiro
