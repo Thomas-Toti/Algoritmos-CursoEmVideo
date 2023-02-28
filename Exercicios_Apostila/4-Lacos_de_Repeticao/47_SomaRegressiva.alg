@@ -1,19 +1,19 @@
-algoritmo "Soma6a100"
+algoritmo "SomaRegressiva"
 var
    count, total, sum: inteiro
 inicio
 
-      count <- 6
+      count <- 500
       
       sum <- count
       
-      Enquanto count <= 100 faca
+      Enquanto count > 0 faca
 
                EscrevaL(count)
                
                sum <- count + total //soma os numeros mostrados na tela
                
-               count <- count + 2 //pula a contagem de 2 em 2 numeros
+               count <- count - 50 //pula a contagem de 50 em 50 numeros
                
                total <- sum // totaliza a soma
       

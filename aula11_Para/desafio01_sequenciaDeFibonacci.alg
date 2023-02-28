@@ -13,7 +13,7 @@ inicio
       
       Para cont <- 0 ate 13 faca
       
-           V1 <- V2 + V3 //soma do dois numeros anteriores
+           V1 <- V2 + V3 //soma dos dois numeros anteriores
            V2 <- V3
            V3 <- V1 //mostra a soma dos dois numeros (variaveis) anteiores
            
