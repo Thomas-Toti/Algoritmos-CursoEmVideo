@@ -2,7 +2,7 @@ algoritmo "SexoEIdadePessoas"
 
 var
    answer, gender: caractere
-   age, biggerAge, genderMan, AgeWoman, youngerWomanAge, sumAge, totalAge: inteiro
+   age, biggerAge, genderMan, AgeWoman, resultAge, birth, smallerAge, sumAge, totalAge: inteiro
    averageAge: real
    
 inicio
@@ -31,11 +31,13 @@ inicio
                FimSe
                
                
-               Se (gender = "woman") e (age <> youngerWomanAge) entao//Erro
+               Se (gender = "woman") entao
+                  resultAge <- 2023 - age
+                  birth <- 2023 - resultAge
+               FimSe
+               
+               se (age <= birth) entao
                   smallerAge <- age
-                  Se (smallerAge) entao
-                    youngerWomanAge <- age
-                  FimSe
                FimSe
                
                
@@ -56,7 +58,7 @@ inicio
       EscrevaL("Number of registered man: ", genderMan)
       EscrevaL("")
       
-      EscrevaL("The age of the youngest registered woman its: ", youngerWomanAge," years.")
+      EscrevaL("The age of the youngest registered woman its: ", smallerAge," years.")
       EscrevaL("")
       
       EscrevaL("The average age among man its: ", averageAge," years.")
